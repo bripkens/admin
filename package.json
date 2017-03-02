@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "yarn run test:unit",
     "test:unit": "jest",
-    "format": ""
+    "format": "prettier --write lib/**/*.js test/**/*.js --single-quote --print-width 120"
   },
   "author": "Ben Ripkens <bripkens@gmail.com> (http://bripkens.de/)",
   "license": "MIT",
