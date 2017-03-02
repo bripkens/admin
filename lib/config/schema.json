@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "NodeAppConfig",
+  "type": "object",
+  "properties": {
+    "admin": {
+      "type": "object",
+      "properties": {
+        "bindAddress": {
+          "type": "string"
+        },
+        "port": {
+          "type": "number"
+        }
+      },
+      "required": ["port"]
+    }
+  },
+  "required": ["admin"]
+}

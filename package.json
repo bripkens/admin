@@ -1,0 +1,21 @@
+{
+  "name": "node-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:unit": "jest",
+    "format": ""
+  },
+  "author": "Ben Ripkens <bripkens@gmail.com> (http://bripkens.de/)",
+  "license": "MIT",
+  "dependencies": {
+    "ajv": "^4.11.3",
+    "node-report": "^2.1.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "jest": "^19.0.2",
+    "prettier": "^0.20.0"
+  }
+}
