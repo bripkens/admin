@@ -6,9 +6,10 @@
   "scripts": {
     "test": "yarn run test:unit && yarn run test:lint",
     "test:unit": "jest",
-    "test:lint": "semistandard lib/**/*.js test/**/*.js",
-    "format": "prettier --write lib/**/*.js test/**/*.js --single-quote --print-width 120",
-    "example:zeroConfig": "node example/zeroConfig.js | pino"
+    "test:lint": "semistandard lib/**/*.js test/**/*.js *.js",
+    "format": "prettier --write lib/**/*.js test/**/*.js *.js --single-quote --print-width 120",
+    "example:zeroConfig": "node example/zeroConfig | pino",
+    "example:commonSetup": "node example/commonSetup | pino"
   },
   "author": "Ben Ripkens <bripkens@gmail.com> (http://bripkens.de/)",
   "license": "MIT",

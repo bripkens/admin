@@ -1,0 +1,12 @@
+{
+  "name": "common-setup",
+  "version": "1.0.0",
+  "description": "Example app which shows a typical admin configuration",
+  "main": "index.js",
+  "author": "Ben Ripkens <bripkens@gmail.com> (http://bripkens.de/)",
+  "license": "MIT",
+  "dependencies": {
+    "admin": "^1.0.0",
+    "admin-plugin-index": "^1.0.0"
+  }
+}

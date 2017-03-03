@@ -1,3 +1,5 @@
+# admin
+
 ## Supported admin endpoints
  - [ ] download heap dump: https://github.com/bnoordhuis/node-heapdump/blob/master/README.md
  - [ ] download 10s CPU profile
