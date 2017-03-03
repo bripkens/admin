@@ -1,0 +1,15 @@
+{
+  "name": "admin-plugin-report",
+  "version": "1.0.0",
+  "description": "Plugin for node-report, a human-readable diagnostic summary",
+  "main": "index.js",
+  "repository": {},
+  "author": "Ben Ripkens <bripkens@gmail.com> (http://bripkens.de/)",
+  "license": "MIT",
+  "peerDependencies": {
+    "admin": "^1.0.0"
+  },
+  "dependencies": {
+    "node-report": "^2.1.1"
+  }
+}
