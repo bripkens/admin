@@ -10,6 +10,7 @@
  - [ ] disable duplicate log message filter
  - [ ] see basic application metrics, e.g. event loop and garbage collection metrics, in a simple HTML view
  - [ ] Provide application config
+ - [ ] optional `?pretty` parameter for all JSON endpoints
 
 ## Supported CLI commands
  - [ ] start: verifies the config and starts the app
