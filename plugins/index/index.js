@@ -1,13 +1,14 @@
 const router = require('express').Router();
+const path = require('path');
 
 router.get('/', (req, res) => {
-  res.send('Welcome!');
+  res.render(path.join(__dirname, 'index.html'));
 });
 
-module.exports = ({mountAsRoot=true}={}) => {
+module.exports = () => {
   return {
     name: 'index',
-    mountPath: mountAsRoot ? '/' : '/index',
+    mountPath: '/',
     router
   };
 };
