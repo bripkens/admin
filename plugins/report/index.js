@@ -1,14 +1,14 @@
-const nodereport = require('node-report/api');
+const nodeReport = require('node-report/api');
 const router = require('express').Router();
 const path = require('path');
 
 router.get('/', (req, res) => {
   if (req.accepts('html')) {
     res.render(path.join(__dirname, 'index.html'), {
-      report: nodereport.getReport()
+      report: nodeReport.getReport()
     });
   } else {
-    res.send(nodereport.getReport());
+    res.send(nodeReport.getReport());
   }
 });
 
