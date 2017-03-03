@@ -1,22 +1,27 @@
 {
-  "name": "node-app",
+  "name": "app-admin",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "yarn run test:unit",
+    "test": "yarn run test:unit && yarn run test:lint",
     "test:unit": "jest",
-    "format": "prettier --write lib/**/*.js test/**/*.js --single-quote --print-width 120"
+    "test:lint": "semistandard lib/**/*.js test/**/*.js",
+    "format": "prettier --write lib/**/*.js test/**/*.js --single-quote --print-width 120",
+    "example:zeroConfig": "node example/zeroConfig.js | pino"
   },
   "author": "Ben Ripkens <bripkens@gmail.com> (http://bripkens.de/)",
   "license": "MIT",
   "dependencies": {
     "ajv": "^4.11.3",
-    "node-report": "^2.1.1"
+    "express": "^4.15.0",
+    "lodash": "^4.17.4",
+    "pino": "^4.0.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
     "jest": "^19.0.2",
-    "prettier": "^0.20.0"
+    "prettier": "^0.20.0",
+    "semistandard": "^9.2.1"
   }
 }
