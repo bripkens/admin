@@ -8,8 +8,8 @@
     "test:unit": "jest",
     "test:lint": "semistandard lib/**/*.js test/**/*.js *.js",
     "format": "prettier --write lib/**/*.js test/**/*.js *.js --single-quote --print-width 120",
-    "example:zeroConfig": "node example/zeroConfig | pino",
-    "example:commonSetup": "node example/commonSetup | pino"
+    "example:zeroConfig": "nodemon --ext js,html,css example/zeroConfig | pino",
+    "example:commonSetup": "nodemon --ext js,html,css example/commonSetup | pino"
   },
   "author": "Ben Ripkens <bripkens@gmail.com> (http://bripkens.de/)",
   "license": "MIT",
@@ -26,6 +26,7 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "jest": "^19.0.2",
+    "nodemon": "^1.11.0",
     "prettier": "^0.20.0",
     "semistandard": "^9.2.1"
   }
