@@ -13,7 +13,7 @@ router.get('/', (req, res) => {
   }
 });
 
-module.exports = _config => {
+module.exports = _config => () => {
   config = _config;
   return {
     name: 'config',

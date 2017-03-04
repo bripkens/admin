@@ -1,7 +1,8 @@
-// const logger = require('admin/api').getLogger('admin-plugin-healthcheck');
 const router = require('express').Router();
 const Promise = require('bluebird');
 const path = require('path');
+
+let logger;
 
 // name => function which returns a promise
 let checks = {};
@@ -25,7 +26,9 @@ router.get('/', (req, res) => {
     });
 });
 
-module.exports = (opts) => {
+module.exports = opts => api => {
+  logger = api.getLogger('admin-plugin-healthcheck');
+
   if (opts && opts.checks) {
     checks = opts.checks;
   }

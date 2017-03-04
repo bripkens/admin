@@ -1,0 +1,32 @@
+{{> header }}
+
+<h1>Profiling</h1>
+
+
+<div class="row header-with-button">
+  <div class="col-sm-6">
+    <h2>Heap Dump</h2>
+  </div>
+  <div class="col-sm-6">
+    <a class="btn btn-info"
+       href="/profile/heapdump"
+       role="button">
+      Download Heap Dump
+    </a>
+  </div>
+</div>
+
+<p>
+  Make a dump of the V8 heap for inspection. Use this functionality to analyze application memory usage and to
+  find the cause of memory leaks. Taking a heap dump is a synchronous action. Heap dumps can be opened and inspected
+  using Google Chrome. To do so, open it in the developer tool's <em>Profile</em> tab.
+</p>
+
+<p class="block-warning">
+  Depending on the size of the heap, this is noticeable and will have an effect on application performance.
+</p>
+
+<h2>CPU Profiling</h2>
+<p>Coming soon…</p>
+
+{{> footer }}

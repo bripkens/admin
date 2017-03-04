@@ -6,6 +6,10 @@ h1 {
   font-size: 28px;
 }
 
+h2 {
+  font-size: 23px;
+}
+
 .brand {
   font-weight: 500;
   font-size: 20px;
@@ -21,4 +25,19 @@ h1 {
 
 .main > h1:first-child {
   margin-top: 0;
+}
+
+.header-with-button a {
+  margin: 15px 0 0 0;
+}
+
+.header-with-button > :last-child {
+  text-align: right;
+}
+
+.block-warning {
+  color: #db8400;
+  font-weight: 500;
+  text-align: center;
+  margin: 10px 0;
 }

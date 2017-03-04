@@ -5,7 +5,7 @@ router.get('/', (req, res) => {
   res.render(path.join(__dirname, 'index.html'));
 });
 
-module.exports = () => {
+module.exports = () => () => {
   return {
     name: 'index',
     mountPath: '/',

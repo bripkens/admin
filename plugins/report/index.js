@@ -12,7 +12,7 @@ router.get('/', (req, res) => {
   }
 });
 
-module.exports = () => {
+module.exports = () => () => {
   return {
     name: 'report',
     mountPath: '/report',

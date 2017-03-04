@@ -1,0 +1,14 @@
+{
+  "name": "admin-plugin-profile",
+  "version": "1.0.0",
+  "description": "Gather heap dumps and CPU profiles",
+  "main": "index.js",
+  "author": "Ben Ripkens <bripkens@gmail.com> (http://bripkens.de/)",
+  "license": "MIT",
+  "peerDependencies": {
+    "admin": "^1.0.0"
+  },
+  "dependencies": {
+    "heapdump": "^0.3.7"
+  }
+}
