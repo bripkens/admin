@@ -12,4 +12,4 @@
  - [ ] disable duplicate log message filter
  - [ ] see basic application metrics, e.g. event loop and garbage collection metrics, in a simple HTML view
  - [x] Provide application config
- - [ ] optional `?pretty` parameter for all JSON endpoints
+ - [x] optional `?pretty` parameter for all JSON endpoints
