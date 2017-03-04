@@ -18,6 +18,12 @@ module.exports = _config => {
   return {
     name: 'config',
     mountPath: '/config',
+    navigationItems: [
+      {
+        href: '/config',
+        label: 'Application Configuration'
+      }
+    ],
     router
   };
 };

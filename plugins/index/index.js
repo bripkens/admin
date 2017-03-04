@@ -9,6 +9,12 @@ module.exports = () => {
   return {
     name: 'index',
     mountPath: '/',
+    navigationItems: [
+      {
+        href: '/',
+        label: 'Index'
+      }
+    ],
     router
   };
 };

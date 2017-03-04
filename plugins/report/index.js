@@ -16,6 +16,12 @@ module.exports = () => {
   return {
     name: 'report',
     mountPath: '/report',
+    navigationItems: [
+      {
+        href: '/report',
+        label: 'Diagnostic Summary'
+      }
+    ],
     router
   };
 };
