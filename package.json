@@ -7,6 +7,7 @@
     "test": "npm run test:unit && npm run test:lint",
     "test:unit": "jest",
     "test:lint": "semistandard lib/**/*.js test/**/*.js *.js plugins/**/*.js",
+    "precommit": "npm test",
     "format": "prettier --write lib/**/*.js test/**/*.js *.js --single-quote --print-width 120",
     "toc": "doctoc --title \"## Contents\" --github README.md && doctoc --title \"## Contents\" --github PLUGINS.md",
     "example:zeroConfig": "nodemon --ext js,html,css example/zeroConfig | pino",
@@ -29,6 +30,7 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "doctoc": "^1.3.0",
+    "husky": "^0.13.2",
     "jest": "^19.0.2",
     "nodemon": "^1.11.0",
     "prettier": "^0.21.0",
