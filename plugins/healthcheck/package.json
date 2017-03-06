@@ -10,5 +10,8 @@
   },
   "dependencies": {
     "bluebird": "^3.5.0"
+  },
+  "devDependencies": {
+    "semistandard": "^9.2.1"
   }
 }

@@ -23,7 +23,7 @@ router.get('/heapdump', (req, res) => {
 
   heapdump.writeSnapshot(targetPath, err => {
     if (err) {
-      logger.warn('Failed to write heap dump to disk', err)
+      logger.warn('Failed to write heap dump to disk', err);
       res.status(500).send(`Failed to write heap snapshot to ${targetPath}: ${err}`);
       attemptHeapdumpCleanup(targetPath);
       return;
@@ -46,7 +46,7 @@ function attemptHeapdumpCleanup (path) {
   try {
     fs.unlinkSync(path);
   } catch (e) {
-    if (err.code !== "ENOENT") {
+    if (e.code !== 'ENOENT') {
       logger.warn('Failed to clean up heap dump at path %s', path, e);
     }
   }

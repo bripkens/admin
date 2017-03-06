@@ -21,7 +21,7 @@ router.get('/', (req, res) => {
       }
     })
     .catch(err => {
-      // logger.error('Failed to run healthchecks', err);
+      logger.error('Failed to run healthchecks', err);
       res.sendStatus(500);
     });
 });
@@ -80,7 +80,7 @@ function getHealthCheckResult () {
         return result;
       }, {});
     });
-};
+}
 
 function runCheck (checker) {
   try {

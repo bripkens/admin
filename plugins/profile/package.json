@@ -10,5 +10,8 @@
   },
   "dependencies": {
     "heapdump": "^0.3.7"
+  },
+  "devDependencies": {
+    "semistandard": "^9.2.1"
   }
 }

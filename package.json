@@ -6,7 +6,7 @@
   "scripts": {
     "test": "npm run test:unit && npm run test:lint",
     "test:unit": "jest",
-    "test:lint": "semistandard lib/**/*.js test/**/*.js *.js",
+    "test:lint": "semistandard lib/**/*.js test/**/*.js *.js plugins/**/*.js",
     "format": "prettier --write lib/**/*.js test/**/*.js *.js --single-quote --print-width 120",
     "example:zeroConfig": "nodemon --ext js,html,css example/zeroConfig | pino",
     "example:commonSetup": "nodemon --ext js,html,css example/commonSetup | pino"
