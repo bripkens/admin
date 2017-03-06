@@ -1,6 +1,6 @@
 # admin &nbsp; [![Build Status](https://travis-ci.org/bripkens/admin.svg?branch=master)](https://travis-ci.org/bripkens/admin) [![js-semistandard-style](https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg?style=flat-square)](https://github.com/Flet/semistandard) [![Greenkeeper badge](https://badges.greenkeeper.io/bripkens/admin.svg)](https://greenkeeper.io/)
 
-Drop-in admin endpoint to help you analyze production issues.
+Drop-in Node.js admin endpoint to help you analyze production issues.
 
 **[Usage](#usage) |**
 **[Plugins](PLUGINS.md) |**
