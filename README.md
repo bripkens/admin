@@ -4,7 +4,7 @@ Drop-in Node.js admin endpoint to help you analyze production issues.
 
 **[Usage](#usage) |**
 **[Plugins](PLUGINS.md) |**
-**[Example project](examples/commonSetup) |**
+**[Example project](example/commonSetup) |**
 **[Changelog](CHANGELOG.md)**
 
 ---
