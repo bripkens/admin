@@ -1,6 +1,8 @@
-# admin
+# admin &nbsp; [![Build Status](https://travis-ci.org/bripkens/admin.svg?branch=master)](https://travis-ci.org/bripkens/admin) [![js-semistandard-style](https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg?style=flat-square)](https://github.com/Flet/semistandard)
 
-**This project is currently a moving target**
+Drop-in admin endpoint to help you analyze production issues.
+
+---
 
 ## TODO
  - [x] download heap dump: https://github.com/bnoordhuis/node-heapdump/blob/master/README.md

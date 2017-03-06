@@ -4,7 +4,7 @@
   "description": "",
   "main": "lib/index.js",
   "scripts": {
-    "test": "yarn run test:unit && yarn run test:lint",
+    "test": "npm run test:unit && npm run test:lint",
     "test:unit": "jest",
     "test:lint": "semistandard lib/**/*.js test/**/*.js *.js",
     "format": "prettier --write lib/**/*.js test/**/*.js *.js --single-quote --print-width 120",
