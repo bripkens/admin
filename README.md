@@ -56,10 +56,12 @@ admin.configure({
     require('admin-plugin-environment')(),
     require('admin-plugin-profile')(),
     require('admin-plugin-config')({
-      // An application config goes here. This config object will be
-      // visible in the admin UI and via the admin REST endpoints.
-      secret: '42',
-      port: 8080
+      config: {
+        // An application config goes here. This config object will be
+        // visible in the admin UI and via the admin REST endpoints.
+        secret: '42',
+        port: 8080
+      }
     }),
     require('admin-plugin-healthcheck')({
       checks: {
