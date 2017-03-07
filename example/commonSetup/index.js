@@ -1,6 +1,11 @@
 const admin = require('admin');
 
 admin.configure({
+  http: {
+    bindAddress: '0.0.0.0',
+    port: parseInt(process.env.PORT || 2999, 10)
+  },
+
   plugins: [
     require('admin-plugin-index')(),
     require('admin-plugin-report')(),

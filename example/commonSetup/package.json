@@ -5,6 +5,12 @@
   "main": "index.js",
   "author": "Ben Ripkens <bripkens@gmail.com> (http://bripkens.de/)",
   "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "6.9.5"
+  },
   "dependencies": {
     "admin": "^1.0.0",
     "admin-plugin-config": "^1.0.0",
