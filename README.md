@@ -17,17 +17,26 @@ Admin provides debugging endpoints via an HTTP server. The functionality provide
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Contents
 
+- [Installation](#installation)
 - [Usage](#usage)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 
-## Usage
+## Installation
 To use admin, the [admin](https://www.npmjs.com/package/admin) Node.js package and at least one [plugin](PLUGINS.md) needs to be installed. The following example shows a typical setup.
 
 ```
-npm install --save admin admin-plugin-index admin-plugin-report admin-plugin-profile admin-plugin-config admin-plugin-healthcheck
+npm install --save admin \
+  admin-plugin-config \
+  admin-plugin-healthcheck \
+  admin-plugin-index \
+  admin-plugin-profile \
+  admin-plugin-report
 ```
+
+## Usage
+To use admin, it needs to be configured and started with your application. The folowing code listing shows how this can be done.
 
 ```javascript
 const admin = require('admin');
