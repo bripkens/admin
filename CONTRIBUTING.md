@@ -1,6 +1,12 @@
 # Contributing
 
 ## Updating the demo app on Heroku
-See the following docs to update the example app on heroku:
+Follow the Heroku getting started docs to install the Heroku CLI. Next, run the following:
 
-https://devcenter.heroku.com/articles/deploying-nodejs
+```
+cd example/commonSetup
+heroku create
+git remote add heroku <repo url from output of previous command>
+cd -
+git subtree push --prefix example/commonSetup heroku master
+```
