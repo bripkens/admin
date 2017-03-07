@@ -1,3 +1,7 @@
+html, body {
+  height: 100%;
+}
+
 body {
   overflow-y: scroll;
 }
@@ -20,10 +24,56 @@ h2 {
 }
 
 .main {
+  min-height: 100%;
+  /* same height as footer */
+  margin-bottom: -289px;
+}
+
+.main:after {
+  content: "";
+  display: block;
+}
+
+.main:after {
+  /* same height as footer */
+  height: 289px;
+}
+
+.footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 100px;
+  display: block;
+  color: #99979c;
+  background-color: #2a2730;
+}
+
+.footer p {
+  margin-bottom: 0;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer ul {
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.footer li {
+  display: inline-block;
+}
+
+.footer li+li {
+  margin-left: 15px;
+}
+
+.content {
   margin: 72px 0 0;
 }
 
-.main > h1:first-child {
+.content > h1:first-child {
   margin-top: 0;
 }
 
