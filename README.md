@@ -33,6 +33,7 @@ To use admin, the [admin](https://www.npmjs.com/package/admin) Node.js package a
 npm install --save admin \
   admin-plugin-config \
   admin-plugin-healthcheck \
+  admin-plugin-environment \
   admin-plugin-index \
   admin-plugin-profile \
   admin-plugin-report
