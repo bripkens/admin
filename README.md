@@ -50,6 +50,7 @@ admin.configure({
   plugins: [
     require('admin-plugin-index')(),
     require('admin-plugin-report')(),
+    require('admin-plugin-environment')(),
     require('admin-plugin-profile')(),
     require('admin-plugin-config')({
       // An application config goes here. This config object will be
