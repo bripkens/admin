@@ -2,6 +2,7 @@
 
 Drop-in Node.js admin endpoint to help you analyze production issues.
 
+**[Live Demo](https://limitless-brushlands-15811.herokuapp.com/) |**
 **[Usage](#usage) |**
 **[Plugins](PLUGINS.md) |**
 **[Example project](example/commonSetup) |**
@@ -12,6 +13,8 @@ Drop-in Node.js admin endpoint to help you analyze production issues.
 Running apps in production can be challenging. Applications may crash, run into bugs or get slow. There are a variety of ways to approach such issues. *Admin* is a tool to help troubleshoot application issues. It is designed to provide detailed debugging information about running Node.js apps.
 
 Admin provides debugging endpoints via an HTTP server. The functionality provided by this server is extensible as admin is a [plugin system](PLUGINS.md).
+
+**Instead of describing this at length, check out the [live demo system](https://limitless-brushlands-15811.herokuapp.com/) on Heroku!**
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
