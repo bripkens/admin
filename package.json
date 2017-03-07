@@ -11,7 +11,7 @@
     "precommit": "npm test",
     "dev:format": "prettier --write lib/**/*.js test/**/*.js *.js --single-quote --print-width 120",
     "dev:toc": "./dev/updateToc.bash",
-    "dev:links": "./dev/setupLinks.bash",
+    "dev:link": "./dev/setupLinks.bash",
     "example:zeroConfig": "nodemon --ext js,html,css example/zeroConfig | pino",
     "example:commonSetup": "nodemon --ext js,html,css example/commonSetup | pino"
   },

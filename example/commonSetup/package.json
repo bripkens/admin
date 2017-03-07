@@ -10,6 +10,7 @@
     "admin-plugin-index": "^1.0.0",
     "admin-plugin-report": "^1.0.0",
     "admin-plugin-config": "^1.0.0",
+    "admin-plugin-environment": "^1.0.0",
     "admin-plugin-healthcheck": "^1.0.0"
   }
 }

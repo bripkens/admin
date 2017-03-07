@@ -8,7 +8,7 @@ npm install
 npm link
 
 for file in $(ls plugins); do
-  echo "Setting up admin-plugin-$file…"
+  echo "Setting up admin-plugin-$file …"
   cd "plugins/$file"
   rm -rf node_moules
   npm link admin

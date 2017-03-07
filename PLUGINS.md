@@ -16,6 +16,7 @@ Admin is a plugin system. On its own, it is useless. Plugins are where all the p
 ## Core Plugins
 
  - [config](plugins/config): A simple config viewer.
+ - [environment](plugins/environment): A simple environment variable viewer.
  - [healthcheck](plugins/healthcheck): Define custom healthchecks and verify application health.
  - [index](plugins/index): The default landing page. Quite empty so far, but will be improved in the future.
  - [profile](plugins/profile): Download CPU and heap profiles effortlessly.
