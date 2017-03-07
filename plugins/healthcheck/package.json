@@ -3,8 +3,25 @@
   "version": "1.0.0",
   "description": "Plugin adds a healthcheck endpoint to the admin interface",
   "main": "index.js",
-  "author": "Ben Ripkens <bripkens@gmail.com> (http://bripkens.de/)",
+  "files": ["index.js", "index.html"],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bripkens/admin.git"
+  },
+  "keywords": [
+    "admin",
+    "admin-plugin",
+    "healthcheck"
+  ],
+  "author": {
+    "name": "Ben Ripkens",
+    "email": "bripkens@gmail.com",
+    "url": "http://github.com/bripkens"
+  },
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bripkens/admin/issues"
+  },
   "peerDependencies": {
     "admin": "^1.0.0"
   },

@@ -6,8 +6,10 @@ admin.configure({
     require('admin-plugin-report')(),
     require('admin-plugin-profile')(),
     require('admin-plugin-config')({
-      secret: '42',
-      port: 8080
+      config: {
+        secret: '42',
+        port: 8080
+      }
     }),
     require('admin-plugin-healthcheck')({
       checks: {

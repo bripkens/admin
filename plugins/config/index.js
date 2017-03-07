@@ -13,8 +13,8 @@ router.get('/', (req, res) => {
   }
 });
 
-module.exports = _config => () => {
-  config = _config;
+module.exports = opts => () => {
+  config = opts ? opts.config : {};
   return {
     name: 'config',
     mountPath: '/config',

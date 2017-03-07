@@ -3,18 +3,42 @@
   "version": "1.0.0",
   "description": "",
   "main": "lib/index.js",
+  "files": ["lib"],
   "scripts": {
     "test": "npm run test:unit && npm run test:lint",
     "test:unit": "jest",
     "test:lint": "semistandard lib/**/*.js test/**/*.js *.js plugins/**/*.js",
     "precommit": "npm test",
-    "format": "prettier --write lib/**/*.js test/**/*.js *.js --single-quote --print-width 120",
-    "toc": "doctoc --title \"## Contents\" --github README.md && doctoc --title \"## Contents\" --github PLUGINS.md",
+    "dev:format": "prettier --write lib/**/*.js test/**/*.js *.js --single-quote --print-width 120",
+    "dev:toc": "./dev/updateToc.bash",
+    "dev:links": "./dev/setupLinks.bash",
     "example:zeroConfig": "nodemon --ext js,html,css example/zeroConfig | pino",
     "example:commonSetup": "nodemon --ext js,html,css example/commonSetup | pino"
   },
-  "author": "Ben Ripkens <bripkens@gmail.com> (http://bripkens.de/)",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bripkens/admin.git"
+  },
+  "keywords": [
+    "admin",
+    "plugins",
+    "profiling",
+    "heap",
+    "cpu",
+    "healthcheck",
+    "http",
+    "ui",
+    "debugging"
+  ],
+  "author": {
+    "name": "Ben Ripkens",
+    "email": "bripkens@gmail.com",
+    "url": "http://github.com/bripkens"
+  },
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bripkens/admin/issues"
+  },
   "dependencies": {
     "ajv": "^4.11.3",
     "bootstrap": "3",
