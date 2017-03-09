@@ -59,7 +59,7 @@
     "husky": "^0.13.2",
     "jest": "^19.0.2",
     "nodemon": "^1.11.0",
-    "prettier": "^0.21.0",
+    "prettier": "^0.22.0",
     "semistandard": "^9.2.1"
   }
 }
