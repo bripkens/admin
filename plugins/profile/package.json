@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Gather heap dumps and CPU profiles",
   "main": "index.js",
-  "files": ["index.js", "index.html"],
+  "files": [
+    "index.js",
+    "index.html"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/bripkens/admin.git"
@@ -28,8 +31,8 @@
   "peerDependencies": {
     "admin": "^1.0.0"
   },
-  "dependencies": {
-    "heapdump": "^0.3.7"
+  "optionalDependencies": {
+    "@risingstack/v8-profiler": "^5.7.0"
   },
   "devDependencies": {
     "semistandard": "^9.2.1"
