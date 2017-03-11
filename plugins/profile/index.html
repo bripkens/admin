@@ -26,7 +26,29 @@
   Depending on the size of the heap, this is noticeable and will have an effect on application performance.
 </p>
 
-<h2>CPU Profiling</h2>
-<p>Coming soon…</p>
+
+<div class="row header-with-button">
+  <div class="col-sm-6">
+    <h2>CPU Profile</h2>
+  </div>
+  <div class="col-sm-6">
+    <a class="btn btn-info"
+       href="/profile/cpu"
+       role="button">
+      Download 10s CPU profile
+    </a>
+  </div>
+</div>
+
+<p>
+  Put the Node.js for <strong>10 seconds</strong> into profiling mode and download the generated CPU profile.
+  Use this functionality to analyze application performance and slow functions or bottlenecks. CPU profiles can be
+  opened and inspected using Google Chrome. To do so, open it in the developer tool's <em>Profile</em> tab.
+</p>
+
+<p class="block-warning">
+  Profiling production applications will have an impact on the performance of the application. Occasinally, we
+  also noticed memory leaks caused by profiling an application.
+</p>
 
 {{> footer }}

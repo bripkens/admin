@@ -34,7 +34,7 @@ module.exports = () => api => {
       .on('error', err => {
         logger.warn('Failed to write heap dump to disk', err);
         res.status(500).send(`Failed to write heap snapshot to ${targetPath}: ${err}`);
-        attemptHeapdumpCleanup(targetPath);
+        attemptCleanup(targetPath);
         snapshot.delete();
       })
       .on('finish', () => {
@@ -46,18 +46,51 @@ module.exports = () => api => {
             if (err) {
               logger.warn('Failed to send heap dump to user', err);
             }
-            attemptHeapdumpCleanup(targetPath);
+            attemptCleanup(targetPath);
           });
         snapshot.delete();
       });
   });
 
-  function attemptHeapdumpCleanup (path) {
+  router.get('/cpu', (req, res) => {
+    const filename = `${Date.now()}.cpuprofile`;
+    const targetPath = path.join(os.tmpdir(), filename);
+    logger.info('CPU profiling initiated via admin endpoint. Collecting profile to %s', targetPath);
+
+    profiler.startProfiling(filename, true);
+
+    setTimeout(() => {
+      const profile = profiler.stopProfiling(filename);
+      profile.export()
+        .pipe(fs.createWriteStream(targetPath))
+        .on('error', err => {
+          logger.warn('Failed to write CPU profile to disk', err);
+          res.status(500).send(`Failed to write CPU profile to ${targetPath}: ${err}`);
+          attemptCleanup(targetPath);
+          profile.delete();
+        })
+        .on('finish', () => {
+          logger.info('CPU profile written to disk, forwarding to user');
+          res
+            .set('Content-Disposition', `attachment; filename="${filename}"`)
+            .set('Content-Type', 'text/plain')
+            .sendFile(targetPath, err => {
+              if (err) {
+                logger.warn('Failed to send CPU profile to user', err);
+              }
+              attemptCleanup(targetPath);
+            });
+          profile.delete();
+        });
+    }, 10000);
+  });
+
+  function attemptCleanup (path) {
     try {
       fs.unlinkSync(path);
     } catch (e) {
       if (e.code !== 'ENOENT') {
-        logger.warn('Failed to clean up heap dump at path %s', path, e);
+        logger.warn('Failed to clean up profiling file at path %s', path, e);
       }
     }
   }
