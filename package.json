@@ -60,6 +60,6 @@
     "jest": "^19.0.2",
     "nodemon": "^1.11.0",
     "prettier": "^0.22.0",
-    "semistandard": "^9.2.1"
+    "semistandard": "^10.0.0"
   }
 }
