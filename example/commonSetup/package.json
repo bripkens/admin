@@ -18,6 +18,7 @@
     "admin-plugin-healthcheck": "^1.0.0",
     "admin-plugin-index": "^1.0.0",
     "admin-plugin-profile": "^1.1.0",
-    "admin-plugin-report": "^1.0.0"
+    "admin-plugin-report": "^1.0.0",
+    "admin-plugin-kill": "^1.0.0"
   }
 }

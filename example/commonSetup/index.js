@@ -1,5 +1,7 @@
 const admin = require('admin');
 
+const isPublicDemo = process.env.IS_DEMO === 'true';
+
 admin.configure({
   http: {
     bindAddress: '0.0.0.0',
@@ -11,6 +13,7 @@ admin.configure({
     require('admin-plugin-report')(),
     require('admin-plugin-environment')(),
     require('admin-plugin-profile')(),
+    isPublicDemo ? null : require('admin-plugin-terminate')(),
     require('admin-plugin-config')({
       config: {
         secret: '42',
