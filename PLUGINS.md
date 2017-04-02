@@ -21,6 +21,7 @@ Admin is a plugin system. On its own, it is useless. Plugins are where all the p
  - [index](plugins/index): The default landing page. Quite empty so far, but will be improved in the future.
  - [profile](plugins/profile): Download CPU and heap profiles effortlessly.
  - [report](plugins/report): Inspect [node-report](https://github.com/nodejs/node-report/) diagnostic summaries for running Node.js apps.
+ - [terminate](plugins/terminate): Terminates the running Node.js instance (useful for manual restarts in combination with schedulers).
 
 
 ## Community Plugins
