@@ -36,7 +36,8 @@ npm install --save admin \
   admin-plugin-environment \
   admin-plugin-index \
   admin-plugin-profile \
-  admin-plugin-report
+  admin-plugin-report \
+  admin-plugin-terminate
 ```
 
 ## Usage
@@ -56,6 +57,7 @@ admin.configure({
     require('admin-plugin-report')(),
     require('admin-plugin-environment')(),
     require('admin-plugin-profile')(),
+    require('admin-plugin-terminate')(),
     require('admin-plugin-config')({
       config: {
         // An application config goes here. This config object will be
