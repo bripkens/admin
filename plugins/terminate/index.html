@@ -1,0 +1,18 @@
+{{> header }}
+
+<h1>Terminate</h1>
+
+<p>
+  Use this endpoint to terminate a bisbehaving Node.js process. Click the button below to terminate the running
+  Node.js process. <strong>Note that this is not necessarily a restart.</strong> Typically, this endpoint is only used
+  when a scheduler is monitoring the Node.js process' status such that the process is automatically restarted on
+  termination, e.g. using PM2, Marathon, Nomad, Kuberneters, Docker, Heroku…
+</p>
+
+<form action="/terminate/execute" method="post">
+  <button type="submit" class="btn btn-danger center-block">
+    I understand the implications, terminate this process after {{exitDelay}}ms.
+  </button>
+</form>
+
+{{> footer }}
