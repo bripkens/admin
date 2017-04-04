@@ -17,8 +17,11 @@
     "admin-plugin-environment": "^1.0.0",
     "admin-plugin-healthcheck": "^1.0.0",
     "admin-plugin-index": "^1.0.0",
+    "admin-plugin-measured": "^1.0.0",
     "admin-plugin-profile": "^1.1.0",
     "admin-plugin-report": "^1.0.0",
-    "admin-plugin-terminate": "^1.0.0"
+    "admin-plugin-terminate": "^1.0.0",
+    "event-loop-lag": "^1.2.0",
+    "measured": "^1.1.0"
   }
 }

@@ -1,6 +1,10 @@
 const admin = require('admin');
+const metrics = require('measured').createCollection();
 
 const isPublicDemo = process.env.IS_DEMO === 'true';
+
+metrics.gauge('memory.rss', () => process.memoryUsage().rss);
+metrics.gauge('event-loop-lag', require('event-loop-lag')(1000));
 
 admin.configure({
   http: {
@@ -13,6 +17,7 @@ admin.configure({
     require('admin-plugin-report')(),
     require('admin-plugin-environment')(),
     require('admin-plugin-profile')(),
+    require('admin-plugin-measured')({collection: metrics}),
     isPublicDemo ? null : require('admin-plugin-terminate')(),
     require('admin-plugin-config')({
       config: {
@@ -23,6 +28,7 @@ admin.configure({
     require('admin-plugin-healthcheck')({
       checks: {
         random() {
+          metrics.meter('healthCheckCalls').mark();
           const v = Math.random();
           if (v > 0.8) {
             throw new Error('Random value >0.8');

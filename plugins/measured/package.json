@@ -1,0 +1,35 @@
+{
+  "name": "admin-plugin-measured",
+  "version": "1.0.0",
+  "description": "Support custom metric display",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "index.html"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bripkens/admin.git"
+  },
+  "keywords": [
+    "admin",
+    "admin-plugin",
+    "metrics",
+    "measured"
+  ],
+  "author": {
+    "name": "Ben Ripkens",
+    "email": "bripkens@gmail.com",
+    "url": "http://github.com/bripkens"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bripkens/admin/issues"
+  },
+  "peerDependencies": {
+    "admin": "^1.0.0"
+  },
+  "devDependencies": {
+    "semistandard": "^9.2.1"
+  }
+}
