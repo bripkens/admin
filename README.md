@@ -4,6 +4,7 @@ Drop-in Node.js admin endpoint to help you analyze production issues.
 
 **[Live Demo](https://limitless-brushlands-15811.herokuapp.com/) |**
 **[Usage](#usage) |**
+**[FAQ](#faq) |**
 **[Plugins](PLUGINS.md) |**
 **[Example project](example/commonSetup) |**
 **[Changelog](CHANGELOG.md)**
@@ -22,6 +23,8 @@ Admin provides debugging endpoints via an HTTP server. The functionality provide
 
 - [Installation](#installation)
 - [Usage](#usage)
+- [FAQ](#faq)
+  - [How do I inspect the admin UI when it only binds to localhost?](#how-do-i-inspect-the-admin-ui-when-it-only-binds-to-localhost)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
