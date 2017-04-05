@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 1.1.0
  - Show PID, event loop lag, resident set size and heap usage.
  - Allow configuration of welcome message.
 

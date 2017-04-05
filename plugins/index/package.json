@@ -1,6 +1,6 @@
 {
   "name": "admin-plugin-index",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Plugin which adds a langing page to the admin interface",
   "main": "index.js",
   "files": [
