@@ -1,12 +1,48 @@
 {{> header }}
 
-<p>
-  Welcome to your new admin interface!
-</p>
+<div class="metrics">
+  <div class="metric">
+    <span class="metric__name">
+      PID
+    </span>
+    <span class="metric__value">
+      {{pid}}
+    </span>
+  </div>
 
-<p>
-  This plugin is intended to be extended with vital information about the Node.js application such
-  as GC and event loop metrics as well as integration of health check results. This is coming soon!
-</p>
+  <div class="metric">
+    <span class="metric__name">
+      Event Loop lag
+    </span>
+    <span class="metric__value js-live-metric"
+          data-source="/index/metrics/lag"
+          data-interval="{{metricInterval}}">
+    </span>
+  </div>
+
+  <div class="metric">
+    <span class="metric__name">
+      Resident Set Size
+    </span>
+    <span class="metric__value js-live-metric"
+          data-source="/index/metrics/rss"
+          data-interval="{{metricInterval}}">
+    </span>
+  </div>
+
+  <div class="metric">
+    <span class="metric__name">
+      Heap Usage
+    </span>
+    <span class="metric__value js-live-metric"
+          data-source="/index/metrics/heap"
+          data-interval="{{metricInterval}}">
+    </span>
+  </div>
+</div>
+
+<hr>
+
+{{{message}}}
 
 {{> footer }}

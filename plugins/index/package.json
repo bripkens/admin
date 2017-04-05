@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "Plugin which adds a langing page to the admin interface",
   "main": "index.js",
-  "files": ["index.js", "index.html"],
+  "files": [
+    "index.js",
+    "index.html",
+    "defaultWelcomeMessage.html"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/bripkens/admin.git"
@@ -27,5 +31,9 @@
   },
   "devDependencies": {
     "semistandard": "^9.2.1"
+  },
+  "dependencies": {
+    "event-loop-lag": "^1.2.0",
+    "pretty-bytes": "^4.0.2"
   }
 }
