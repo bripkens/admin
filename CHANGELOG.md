@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 1.3.0
  - Add supporting infrastructure for simple live metric presentation.
 
 ## 1.2.0
