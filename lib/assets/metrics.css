@@ -1,0 +1,21 @@
+.metrics {
+  text-align: center;
+}
+
+.metric {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 0 8px;
+  border-radius: 3px;
+  background: #f5f5f5;
+}
+
+.metric__name {
+  font-weight: bold;
+  display: block;
+}
+
+.metric__value {
+  font-size: 20px;
+  font-weight: 300;
+}

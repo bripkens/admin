@@ -1,5 +1,8 @@
 # Changelog
 
+## Unreleased
+ - Add supporting infrastructure for simple live metric presentation.
+
 ## 1.2.0
  - Allow `null` and `undefined` to be passed as plugins such that plugins can easily be enabled / disabled using plain JavaScript mechanisms.
  - Ensure that static assets can always be loaded.
