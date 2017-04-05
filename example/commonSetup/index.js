@@ -1,5 +1,7 @@
-const admin = require('admin');
 const metrics = require('measured').createCollection();
+const admin = require('admin');
+const path = require('path');
+const fs = require('fs');
 
 const isPublicDemo = process.env.IS_DEMO === 'true';
 
@@ -13,7 +15,9 @@ admin.configure({
   },
 
   plugins: [
-    require('admin-plugin-index')(),
+    require('admin-plugin-index')({
+      message: fs.readFileSync(path.join(__dirname, 'message.html'), {encoding: 'utf8'})
+    }),
     require('admin-plugin-report')(),
     require('admin-plugin-environment')(),
     require('admin-plugin-profile')(),

@@ -87,3 +87,18 @@ admin.configure({
 
 admin.start();
 ```
+
+## FAQ
+
+### How do I inspect the admin UI when it only binds to localhost?
+The easiest solution is to setup an SSH tunnel to the machine:
+
+```
+SSH_KEY="~/.ssh/<my_key>"
+REMOTE_USER="<user>"
+REMOTE_HOST="<host>"
+ADMIN_PORT="<port>"
+
+ssh -i "$SSH_KEY" -Nf -L "$ADMIN_PORT:localhost:$ADMIN_PORT" "$REMOTE_USER@$REMOTE_HOST"
+curl "localhost:$ADMIN_PORT"
+```
