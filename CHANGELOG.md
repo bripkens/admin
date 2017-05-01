@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 1.4.0
  - Remove unused `ajv` dependency.
  - Use `get-logger` for easy log configuration.
 
