@@ -8,7 +8,7 @@ let logger;
 let checks = {};
 
 router.get('/', (req, res) => {
-  getHealthCheckResult()
+  exports.getHealthCheckResult()
     .then(result => {
       res.status(isHealthcheckCompletelyHealthy(result) ? 200 : 500);
 
@@ -26,7 +26,7 @@ router.get('/', (req, res) => {
     });
 });
 
-module.exports = opts => api => {
+module.exports = exports = opts => api => {
   logger = api.getLogger('admin-plugin-healthcheck');
 
   if (opts && opts.checks) {
@@ -46,7 +46,8 @@ module.exports = opts => api => {
   };
 };
 
-function getHealthCheckResult () {
+// getHealthCheckResult is exported for easier integration in APM tools.
+exports.getHealthCheckResult = function getHealthCheckResult () {
   const checkNames = Object.keys(checks);
   const checkResultPromises = checkNames
     .map(name =>
@@ -80,7 +81,7 @@ function getHealthCheckResult () {
         return result;
       }, {});
     });
-}
+};
 
 function runCheck (checker) {
   try {
