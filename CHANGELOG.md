@@ -2,6 +2,7 @@
 
 ## Unreleased
  - Remove unused `ajv` dependency.
+ - Use `get-logger` for easy log configuration.
 
 ## 1.3.0
  - Add supporting infrastructure for simple live metric presentation.

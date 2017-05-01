@@ -14,8 +14,8 @@
     "dev:format": "prettier --write lib/**/*.js test/**/*.js *.js --single-quote --print-width 120",
     "dev:toc": "./dev/updateToc.bash",
     "dev:link": "./dev/setupLinks.bash",
-    "example:zeroConfig": "nodemon --ext js,html,css example/zeroConfig | pino",
-    "example:commonSetup": "nodemon --ext js,html,css example/commonSetup | pino"
+    "example:zeroConfig": "nodemon --ext js,html,css example/zeroConfig",
+    "example:commonSetup": "nodemon --ext js,html,css example/commonSetup"
   },
   "repository": {
     "type": "git",
@@ -46,11 +46,11 @@
     "bootswatch": "^3.3.7",
     "express": "^4.15.0",
     "express-prettify": "^0.0.7",
+    "get-logger": "^1.0.0",
     "handlebars": "^4.0.6",
     "hbs": "^4.0.1",
     "jquery": "^3.2.1",
     "lodash": "^4.17.4",
-    "pino": "^4.0.1",
     "prismjs": "^1.6.0"
   },
   "devDependencies": {
