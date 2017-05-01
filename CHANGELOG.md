@@ -1,5 +1,8 @@
 # Changelog
 
+## Unreleased
+ - Remove unused `ajv` dependency.
+
 ## 1.3.0
  - Add supporting infrastructure for simple live metric presentation.
 

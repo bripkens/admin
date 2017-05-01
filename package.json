@@ -42,7 +42,6 @@
     "url": "https://github.com/bripkens/admin/issues"
   },
   "dependencies": {
-    "ajv": "^5.0.0",
     "bootstrap": "3",
     "bootswatch": "^3.3.7",
     "express": "^4.15.0",
