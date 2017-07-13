@@ -9,7 +9,7 @@
     "start": "node index.js"
   },
   "engines": {
-    "node": "6.9.5"
+    "node": "6.11.1"
   },
   "dependencies": {
     "admin": "^1.4.0",
