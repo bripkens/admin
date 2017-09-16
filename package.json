@@ -51,7 +51,7 @@
     "hbs": "^4.0.1",
     "jquery": "^3.2.1",
     "lodash": "^4.17.4",
-    "prismjs": "^1.6.0"
+    "prismjs": "^1.8.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
