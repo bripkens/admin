@@ -43,7 +43,7 @@
   },
   "dependencies": {
     "bootstrap": "3",
-    "bootswatch": "^3.3.7",
+    "bootswatch": "^4.1.1",
     "express": "^4.15.0",
     "express-prettify": "^0.0.7",
     "get-logger": "^1.0.0",
