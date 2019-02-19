@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.4.1
+ - Upgrade `handlebars` and `hbs` dependencies to address security issues.
+
 ## 1.4.0
  - Remove unused `ajv` dependency.
  - Use `get-logger` for easy log configuration.
