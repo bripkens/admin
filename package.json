@@ -44,7 +44,7 @@
     "bootstrap": "3",
     "bootswatch": "^3.3.7",
     "express": "^4.15.0",
-    "express-prettify": "^0.0.7",
+    "express-prettify": "^0.0.9",
     "get-logger": "^1.0.0",
     "handlebars": "^4.0.13",
     "hbs": "^4.0.2",
